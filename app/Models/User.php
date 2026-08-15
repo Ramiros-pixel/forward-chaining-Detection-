@@ -29,4 +29,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * Relasi ke riwayat diagnosa milik user ini.
+     */
+    public function hasilDiagnosa()
+    {
+        return $this->hasMany(HasilDiagnosa::class);
+    }
 }
