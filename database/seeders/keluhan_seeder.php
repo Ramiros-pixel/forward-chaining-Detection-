@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-
+use Illuminate\Support\Facades\DB;
 class keluhan_seeder extends Seeder
 {
     /**
@@ -18,5 +18,6 @@ class keluhan_seeder extends Seeder
             ['kode_keluhan'=>'K2', 'keluhan' => 'Diare'],
             ['kode_keluhan' => 'K3', 'keluhan'=>'Demam']
         ];
+        DB::table('keluhan')->insert($keluhan);
     }
 }

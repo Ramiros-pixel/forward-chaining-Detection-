@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Gejala extends Model
 {
     //
+    protected $table = 'gejala';
     use HasFactory;
     protected $fillable =[
         'kode_gejala',

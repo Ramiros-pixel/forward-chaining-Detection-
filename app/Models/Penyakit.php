@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Penyakit extends Model
 {
+    protected $table = 'penyakit'; 
     //
     use Hasfactory;
     protected $fillable = [

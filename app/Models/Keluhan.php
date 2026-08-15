@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Keluhan extends Model
 {
     //
+    protected $table = 'keluhan';
     use Hasfactory;
     protected $fillable = [
-        'kode_penyakit',
-        'klasifikasi_penyakit'
+        'kode_keluhan',
+        'keluhan'
 
     ];
 
